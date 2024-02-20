@@ -392,7 +392,7 @@ nav ul li a:hover {
 /* Side Menu */
 
 .sidemenu {
-    border-radius: 10px;
+    border-radius: 5px;
     padding: 10px 0px;
     background-color: var(--white);
     text-shadow: 0px 0px 4px rgba(255, 255, 255, 1);
@@ -492,7 +492,9 @@ nav ul li a:hover {
 /* Slider */
 
 .carousel-inner {
-    border-radius: 10px;
+    border-radius: 5px;
+    width: 966px;
+    height: 354px;
 }
 
 .carousel-control-next,
@@ -1122,8 +1124,18 @@ nav ul li a:hover {
 }
 
 .product_page_buy_now {
-    width: 130px;
-    font-size: 14px;
+    width: 73px;
+    font-size: 13px;
+    font-weight: 600;
+    margin-top: 10px;
+    color: var(--yellow);
+    border: 1px solid var(--yellow);
+    background: transparent;
+}
+
+.product_page_add_to_cart {
+    width: 93px;
+    font-size: 13px;
     font-weight: 600;
     margin-top: 10px;
     color: var(--yellow);
@@ -1132,12 +1144,27 @@ nav ul li a:hover {
 }
 
 .product_page_buy_now:hover {
-    font-size: 14px;
-    font-weight: 600;
-    margin-top: 10px;
     color: var(--white);
     border: 1px solid var(--blue);
     background: var(--blue);
+}
+
+.product_page_add_to_cart:hover {
+    color: var(--white);
+    border: 1px solid var(--blue);
+    background: var(--blue);
+}
+
+@media screen and (max-width: 767px) {
+    .product_page_buy_now {
+        width: 58px;
+        font-size: 10px;
+    }
+
+    .product_page_add_to_cart {
+        width: 73px;
+        font-size: 10px;
+    }
 }
 
 /* Dashboard */
@@ -1226,14 +1253,4 @@ nav.mobile ul li a span i {
     display: flex;
     justify-content: space-between;
     font-size: 14px;
-}
-
-.offcanvas.offcanvas-start {
-    width: 300px;
-}
-
-
-.sing-in-up {
-    display: grid;
-    justify-items: center;
 }

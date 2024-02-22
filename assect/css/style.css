@@ -1254,3 +1254,58 @@ nav.mobile ul li a span i {
     justify-content: space-between;
     font-size: 14px;
 }
+
+
+nav.mobile-product-page-bar {
+    display: flex;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding: 0px 0px 0px 15px;
+    background: var(--white);
+    border-top: 1px solid #ccc;
+    z-index: 9999;
+    margin: 0 auto;
+}
+
+nav.mobile-product-page-bar ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin: 0;
+    justify-self: center;
+    vertical-align: middle;
+}
+
+nav.mobile-product-page-bar li a {
+    color: var(--black) !important;
+    font-size: 16px !important;
+}
+
+.btn-txt{
+    display:inline-block;
+    -webkit-transform: skewX(20deg);
+    transform: skewX(20deg);
+}
+
+.buy-now {
+    background-color: var(--yellow) !important;
+    font-weight: 600;
+    padding: 10px 15px;
+    -webkit-transform: skewX(-20deg);
+    transform: skewX(-20deg);
+    z-index: 999;
+    left: 9px;
+}
+
+.add-cart {
+    background-color: var(--blue) !important;
+    font-weight: 600;
+    padding: 10px 15px;
+    -webkit-transform: skewX(-20deg);
+    transform: skewX(-20deg);
+    padding-right: 35px;
+    margin-right: -10px;;
+}
